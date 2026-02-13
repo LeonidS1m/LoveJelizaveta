@@ -39,12 +39,13 @@ button {
 }
 
 .gallery img {
-    width: 90%;
-    max-width: 350px;
+    width: 100%;       /* фото растягивается на ширину экрана */
+    max-width: 350px;  /* но не больше 350px */
     border-radius: 15px;
-    margin: 10px 0;
+    margin: 10px auto; /* выравнивание по центру */
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     animation: fadeIn 1s ease;
+    display: block;
 }
 
 .message {
@@ -125,5 +126,3 @@ function heartsRain() {
 
 </body>
 </html>
-
-
